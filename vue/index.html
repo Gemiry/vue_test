@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=640,target-densitydpi=device-dpi,user-scalable=no">
+	<script type="text/javascript" src="https://unpkg.com/vue"></script>
+	<title>vue 基本练习</title>
+</head>
+<body>
+<!-- 1 -->
+	<div id="tel_1">
+		{{msg}}
+	</div>
+<!-- 2 -->
+	<div id="tel_2" v-bind:title='msg2'>
+		v-bind:title 测试
+	</div>
+<!-- 3 -->
+	<div id="tel_3">
+		<p>点击我测试：<span v-if='sure'>这里是测试内容</span></p>
+	</div>
+<!-- 4 -->
+	<div id='tel_4'>
+		<title>这里是列表渲染</title>
+		<ol >
+			<li v-for="list in lists">{{list.text}}</li>
+		</ol>
+	</div>
+<!-- 5 -->
+	<div id="tel_5">
+		<button v-on:click="layer11">事件绑定{{msg}}</button>
+	</div>
+
+<!-- 6 -->
+	<div id="tel_6">
+		<input type="text" v-model="msg">
+		<div>{{msg}}</div>
+	</div>
+<!-- 7 -->
+	<div id="tel_7">
+	<ol>
+		<todo-item v-for="item in lists" v-bind:todo="item" v-bind:key="item.id"></todo-item>
+	</ol>
+	</div>
+</body>
+<script type="text/javascript" src="index.js"></script>
+</html>
