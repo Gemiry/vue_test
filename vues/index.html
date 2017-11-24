@@ -4,9 +4,25 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>vues</title>
+    <style type="text/css">
+    	*{
+    		margin: 0;
+    		padding: 0;
+    	}
+    </style>
   </head>
   <body>
     <div id="app"></div>
     <!-- built files will be auto injected -->
   </body>
+  <script type="text/javascript">
+  	(function(win,doc){
+          change();
+          function change(){
+              doc.documentElement.style.fontSize = doc.documentElement.clientWidth *100/640+'px';
+          }
+          win.addEventListener('resize',change,false);
+          win.addEventListener('orientationchange',change,false);  /* 这个是移动端设备横屏、竖屏转换时触发的事件处理函数 */
+      })(window,document);
+  </script>
 </html>
