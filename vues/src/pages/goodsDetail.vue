@@ -1,21 +1,15 @@
 <template lang="html">
-	<div id="home">
-		<div>
-			detail
-		</div>
-		<common-footer></common-footer>
-	</div>
+  <div id="home">
+    <div>
+      detail
+    </div>
+  </div>
 </template>
-
 <script>
-	import CommonFooter from '../components/commomFooter.vue'
-	export default {
-	  components:{
-	  	CommonFooter
-	  }
-	}
-</script>
 
-<style lang="sass"  type="text/css">
-	@import "../sass/index.scss"
+
+</script>
+<style lang="sass" scoped type="text/css">
+@import "../sass/index.scss"
+
 </style>

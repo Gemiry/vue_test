@@ -3,19 +3,18 @@
 		<div>
 			home
 		</div>
-		<common-footer></common-footer>
 	</div>
 </template>
 
 <script>
-	import CommonFooter from '../components/commomFooter.vue'
-	export default {
-	  components:{
-	  	CommonFooter
-	  }
-	}
+	
 </script>
 
-<style lang="sass"  type="text/css">
-	@import "../sass/index.scss"
+<style lang="scss" scoped type="text/css">
+	#home{
+		color: #1374fb;
+		div{
+			font-size: 100px;
+		}
+	}
 </style>
